@@ -1,0 +1,27 @@
+package project1;
+ import java.util.Iterator;
+ import java.util.ArrayList;
+import java.util.Collection;
+public class usingList {
+ public void accept()
+ {
+	Collection student;
+	ArrayList<student> list = new ArrayList();
+    student obj=new student(1,"shubhi",89);  
+    student obj1=new student(1,"saurav",86);
+    student obj2=new student(1,"shubhss",99);
+    student obj3=new student(1,"shubhi",87);
+    student obj4=new student(1,"shubhi",90);
+    
+      Iterator itr=list.iterator();
+      while(itr.hasNext())
+    {
+    	System.out.println(itr.next());
+    }
+ }
+
+ public static void main(String args[]){
+	 usingList oo=new usingList();
+	 oo.accept();
+ }
+}
