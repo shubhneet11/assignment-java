@@ -1,0 +1,10 @@
+package project1;
+import java.util.ArrayList;
+
+public class student {
+	student(int roll,String name,int marks)
+	{
+		System.out.println("student name is"+name);
+		System.out.println("Student marks is"+marks);
+	}
+	
