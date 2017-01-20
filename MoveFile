@@ -1,0 +1,13 @@
+import java.io.File;
+public class MoveFiletoanotherDirectory {
+public static void main(String[] args){
+//Move the file from - C:/Javaseleniumworld/Code.txt to - C:/QTPworld/Code.txt
+File from = new File("C:/Javaseleniumworld/Code.txt");
+File to = new File("C:/QTPworld/Code.txt");
+//Rename
+if (from.renameTo(to))
+System.out.println("Successfully Moved the file");
+else
+System.out.println("Error while moving the file");
+}
+}
