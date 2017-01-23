@@ -1,0 +1,68 @@
+
+1. What is the difference between Manual Testing and Automation Testing?
+     
+ Manual testing is not accurate at all times due to human error, hence it is less reliable.
+
+Automated testing is more reliable, as it is performed by tools and/or scripts.
+
+    
+Manual testing is time-consuming, taking up human resources.
+Automated testing is executed by software tools, so it is significantly faster than a manual approach.
+
+   
+ Investment is required for human resources.
+ Investment is required for testing tools.
+
+ Manual testing is only practical when the test cases are run once or twice, and frequent repetition is not required.
+ Automated testing is a practical option when the test cases are run repeatedly over a long time period.
+
+ Manual testing allows for human
+ observation, which may be more useful if
+ the goal is user-friendliness or improved customer experience.
+ 
+ Automated testing does not entail human observation and cannot guarantee user-friendliness or positive customer experience.
+
+2. What is automation?
+Ans In software testing, test automation is the use of special software (separate from the software being tested) to control
+ the execution of tests and the comparison of actual outcomes with predicted outcomes. 
+
+3.why to automate a project?
+Ans3.1. Automation is done to basically do the regression testing of the project .
+     2. it helps to provide a wider scope coverage of the test cases in the test environment.
+     3. with the software testing tools we can easily test the application with a set of codes and scripts. 
+     4. it takes 70% lesser time than the manual testing.
+4. What are the advantages of Automation?
+Ans4. 1> efficient testing
+      2> upgradation and reusability
+      3> Consistency
+      4> Unique Programmability and Shelf Life 
+      5> User Environment Simulation-One unique way in which testing automation affects the testing procedure
+         is through simulation of a typical user environment through categorically deployed mouse clicks and keystrokes.
+5. Name few test Automation Tools.
+Ans5. selenium IDE
+      HP UFT(unified functional testing)
+      test complete
+      watir
+      telerik test studio
+6. What is the need of Automation?
+Ans6>Test Automation software is the best way to increase the effectiveness,
+ efficiency and coverage of your software testing. Automated software testing has long been considered critical for big
+ software development organizations but is often thought to be too expensive or difficult for
+ smaller companies to implement.
+
+7. What is Framework?
+Ans7. Framework is set of rules or the tools provided by which we will test the test environment
+
+8> What are the types of frameworks?
+Ans 8. keyword driven
+       data driven
+       hybrid 
+       Modular/POM(page object model)
+9> what is keyword driven and data driven framework?
+
+Ans9>It is nothing but data driven test, performing the same functionality with multiple input
+ values by using parametarization with the help of data table or data source is called Data Driven 
+ Test.
+
+  keyword driven framework->A keyword-driven framework is a table-driven testing or action word based testing. It is a 
+   software testing method suitable for both manual and automated testing. 
