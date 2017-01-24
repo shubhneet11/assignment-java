@@ -1,0 +1,19 @@
+package selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class Driver {
+ public void run()
+ {
+	 System.setProperty("webdriver.gecko.driver","D://selenium//geckodriver.exe");
+	 FirefoxDriver driver=new FirefoxDriver();
+	 driver.get("http://www.facebook.com");
+	 driver.manage().window().maximize();
+ }
+	public static void main(String[] args) {
+	Driver obj=new Driver();
+	obj.run();
+
+	}
+
+}
