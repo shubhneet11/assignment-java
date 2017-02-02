@@ -1,0 +1,33 @@
+package selenium;
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class CheckElement {
+	WebDriver driver;
+	WebElement username,password;
+ public void run()
+ {
+	 System.setProperty("webdriver.gecko.driver","D://selenium//geckodriver.exe");
+	 FirefoxDriver driver=new FirefoxDriver();
+	 driver.get("http://www.facebook.com");
+	 driver.manage().window().maximize();
+	 
+	 username=driver.findElement(By.id("email"));
+	 if(username.isDisplayed())
+	 {
+		 System.out.println("Username field is available");
+	 }
+	 else
+	 {
+		 System.out.println("Username field is not available");
+	 }
+ }
+	public static void main(String[] args) {
+	CheckElement obj=new CheckElement();
+	obj.run();
+
+	}
+
+}
