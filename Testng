@@ -1,0 +1,52 @@
+package demoo;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.experimental.theories.suppliers.TestedOn;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.DataProvider;
+import org.testbg.Assert;
+
+
+public class login_credentials {
+	WebDriver drive;
+	@Test(dataProvider="checklogin")
+	public void login()
+	{
+		
+		System.setProperty("webdriver.gecko.driver", "D:\\selenium on 172.16.10.48\\geckodriver-v0.11.1-win32\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		Object drive = null;
+		WebDriver wait =(WebDriver) new WebDriverWait((WebDriver) drive,10);
+		
+		drive= new FirefoxDriver();
+		driver.get("https://www.facebook.com/");
+		driver.findElement(By.id("email")).sendKeys("dasharivallabh@gmail.com");
+		driver.findElement(By.id("pass")).sendKeys("test12345");
+		driver.findElement(By.id("u_0_o")).click();
+	}
+	public void tesrdown()
+	{
+	drive.quit();	
+	}
+	public Object[][] passdata()
+	{
+		
+		Object[] []  data=new Object[3][2];
+		data [0] [0] = "demo";
+		data [0] [1] = " demo1";
+		return data;
+		
+	}
+
+	
+
+}
